@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+    max-width: 100%;
+}
+
+body {
+    padding: 60px;
+}
+
+.buscador {
+    position: relative;
+    width: 450px;
+}
+
+.buscador input {
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.buscador i {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    font-size: 1.2rem;
+}
+
+.card__row {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card__row::after {
+    content: "";
+    flex: auto;
+  }
+
+.card {
+    padding: 1.5rem;
+}
+
+.card__content {
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card__content img {
+    max-height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.card__content h3 {
+    padding: 15px;
 }
