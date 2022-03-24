@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
-import { GifDrid } from './components/GifDrid';
+import { GifGrid } from './components/GifGrid';
 
 //Componente principal
-const GifExpertApp = () => {
+const GifExpertApp = ({defaultCategories = []}) => {
 
     //Hook con las categorias de Gif
-    const [categories, setCategories] = useState(['One Punch']);
+    //const [categories, setCategories] = useState(['One Punch']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     return (
         <>
@@ -18,7 +19,7 @@ const GifExpertApp = () => {
             <div>
                 {
                     categories.map((category) => (
-                        <GifDrid 
+                        <GifGrid 
                             key={category}
                             category={category} 
                         />

@@ -15,6 +15,8 @@ export const AddCategory = ( {setCategories} ) => {
         
         //metemos dentro del useState la nueva categoria
         if(inputValue.trim().length > 2) {
+            //Metemos el nuevo valor junto con las categorias
+            //que ya habia antes
             setCategories(category => [inputValue, ...category ]);
             setinputValue('');
         }

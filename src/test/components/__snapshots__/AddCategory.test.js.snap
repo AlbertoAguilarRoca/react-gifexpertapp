@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <AddCategory />> debe de mostrarse correctamente 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="buscador"
+  >
+    <i
+      className="bi bi-plus-circle"
+    />
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</form>
+`;
